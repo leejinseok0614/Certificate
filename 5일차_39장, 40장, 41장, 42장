@@ -1,0 +1,77 @@
+📝 5일차
+: 2023.07.07
+
+📝 DOS (Disk Operating System)
+개념: 개인용 컴퓨터에서 디스크와 파일 관리를 위한 운영체제
+
+📝 부팅 과정
+개념: 부팅은 컴퓨터에 전원을 넣은 순간부터 DOS를 디스크로부터 주기억장치로 읽어내어 컴퓨터를 이용가능한 상태로 만드는 과정
+필요한 파일: MS-DOS.SYS, IO.SYS, COMMAND, COM
+순서: 전원 공급-> ROM BIOS를 이용-> IO.SYS-> MSDOS.SYS-> CONFIG.SYS-> COMMAND.COM-> AUTOEXEC.BAT
+종류: 웜부팅(Warm Booting, Ctrl+Alt+Delete를 눌러서 컴퓨터를 재부팅), 콜드부팅(Cold Booting, 전원 스위치를 누르거나 본체의 리셋을 누름)
+
+📝 파일
+시스템 파일: 시스템을 운용 및 관리 (MSDOS.SYS, IO.SYS, COMMAND, COM) 
+실행 파일: EXE, COM, BAT
+배치 파일: BAT 확장자인 파일로 명령어가 모여있음
+백업 파일: 데이터 훼손을 대비하여 동일한 파일을 하나 더 만듬
+텍스트 파일: 아스키 형태의 파일
+
+📝 배치 파일
+정의: 자주 사용되는 일련의 명령어들을 한 그룹으로 묶은 것, 일괄처리파일이라고도 부름
+종류: 부팅시 자동 실행되는 Autoexec.bat과 작성하여 실행하는 일반 배치 파일로 나뉨
+배치 파일 전용 명령어: ECHO, PAUSE, GOTO, CALL, REM, FOR, IF
+
+📝 환경 설정 파일
+정의: DOS로 부팅될때, 자신에게 필요한 시스템 환경을 설정해 주는 파일 (CONGIF.SYS)
+조건: Config.sys 파일은 반드시 루트 디렉토리에 존재해야 실행
+환경 설정 명령어: LASTDRIVE, FILES, BREAK, PAUSE, DEVICE, BUFFERS, LOAD HIGH, SHELL, INSTALL, RAMDRIVE, MEM, HIMEM, EMM386
+
+📝 내부 명령어
+정의: COMMAND.COM이 실행됨과 동시에 주기억장치에 상주, 경로와 관계없이 어떤 디렉토리에도 실행이 가능
+종류: CLS, DIR, VER, COPY, DATE, TIME, MD, CD, RD, PROMPT, VOL, TYPE
+
+📝 외부 명령어
+정의: 보조기억장치에 저장되어 있다가 사용자가 명령을 입력하면 주기억장치에 적재시킨후, 실행하는 명령어
+종류: ATTRIB, FORMAT, CHKDSK, FDISK, LABEL, SCANDISK, DISKCOPY, SORT, SYS
+
+📝 기본 명령어
+CLS: 현재 화면의 내용을 지움
+DATE: 현재 시스템의 날짜 확인 OR 변경
+TIME: 현재 시스템의 시간을 확인 OR 변경
+VER: 현재 사용중인 DOS의 버전을 표시
+PROMPT: DOS의 프롬프트를 여러가지 형태로 표시
+VOL: 드라이브의 볼륨명과 일련번호를 표시
+
+📝 필터 명령어
+MORE: 내용을 한 화면씩 출력
+FIND: 하나 또는 여러개의 파일에서 특정한 문자열을 검색
+SORT: 내용을 정렬하여 화면이나 파일로 출력
+
+📝 디스크 관련 명령어
+FORMAT (/S, /Q. /V, /F, /4)
+DISKCOPY
+CHKDSK
+FDISK
+DEFRAG
+SYS
+DISKCOMP
+SCANDISK
+
+📝 디렉토리 관련 명령어
+MD
+RD
+CD
+DELTREE
+XCOPY
+PATH
+
+📝 파일 명령어
+DIR(/P, /W, /O, /S, /A, /H)
+COPY
+DEL=ERASE
+UNDELETE
+TYPE
+REN
+ATTRIB
+FC
